@@ -18,7 +18,12 @@ class Panda:
     @property
     def end_effector_pose(self):
         return self.moveit_group.get_current_pose().pose
-
+    
+    def move_to_configuration(self, config):
+        self.moveit_group.set_joint_value_target(config)
+        self.moveit_group.go(wait=True)
+        self.moveit_group.clear_pose_targets()
+        
     def setup_moveit(self):
         self.robot = moveit_commander.RobotCommander()
         self.moveit_scene = moveit_commander.PlanningSceneInterface()
