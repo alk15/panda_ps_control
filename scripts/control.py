@@ -93,7 +93,7 @@ if __name__ == '__main__':
     panda = Panda()
     rospy.Subscriber('joy', Joy, joystick_callback, queue_size=1)
 
-    rate = rospy.rate(10)
+    rate = rospy.Rate(10)
     while not rospy.is_shutdown():
         if start_particle_filter:
             launch_particle_filtering()
