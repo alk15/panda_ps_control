@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>panda-ps3-control</name>
+  <version>0.1.0</version>
+  <description>Control Panda with a PS3 controller</description>
+  <maintainer email="r.papallas@leeds.ac.uk">Rafael Papallas</maintainer>
+  <license>MIT</license>
+  <author email="r.papallas@leeds.ac.uk">Rafael Papallas</author>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <exec_depend>joy</exec_depend>
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+  <export>
+  </export>
+</package>
