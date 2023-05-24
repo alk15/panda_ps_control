@@ -15,6 +15,10 @@ class Panda:
         self.set_end_effector_link()
         self.add_static_obstacles_to_scene()
 
+    @property
+    def end_effector_pose(self):
+        return self.moveit_group.get_current_pose().pose
+
     def setup_moveit(self):
         self.robot = moveit_commander.RobotCommander()
         self.moveit_scene = moveit_commander.PlanningSceneInterface()
