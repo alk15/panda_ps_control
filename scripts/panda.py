@@ -59,7 +59,7 @@ class Panda:
         time.sleep(1)
 
     def move_through_waypoints(self, end_effector_waypoints):
-        plan, _ = self.moveit_group.compute_cartesian_path(end_effector_waypoints, 0.01, 0.0)
+        plan, _ = self.moveit_group.compute_cartesian_path(end_effector_waypoints, 0.01, True)
         trajectory = plan.joint_trajectory.points
         self.moveit_group.go(trajectory[-1].positions, wait=True)
     
