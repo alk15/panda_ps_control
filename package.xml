@@ -1,11 +1,13 @@
-<?xml version="1.0"?>
+<?xml version="2.0"?>
 <package format="2">
-  <name>panda-ps3-control</name>
-  <version>0.1.0</version>
-  <description>Control Panda with a PS3 controller</description>
-  <maintainer email="r.papallas@leeds.ac.uk">Rafael Papallas</maintainer>
+  <name>panda_ps_control</name>
+  <version>0.2.0</version>
+  <description>Control Panda with a PS3/PS4 controller</description>
+  <maintainer email="alex13kouris@hotmail.com">Alexandros Kouris</maintainer>
+
   <license>MIT</license>
   <author email="r.papallas@leeds.ac.uk">Rafael Papallas</author>
+  <author email="alex13kouris@hotmail.com">Alexandros Kouris</author>
 
   <buildtool_depend>catkin</buildtool_depend>
   <exec_depend>joy</exec_depend>
